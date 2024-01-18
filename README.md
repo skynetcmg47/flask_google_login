@@ -19,6 +19,7 @@ Once Homebrew is installed, open your terminal and run the following commands:
 ```bash
 brew update
 brew install openjdk@11
+```
 This installs OpenJDK 11, a popular version of Java. You can replace 11 with a different version if needed.
 
 Using AdoptOpenJDK
@@ -26,9 +27,10 @@ Alternatively, you can download and install Java from AdoptOpenJDK. Follow the i
 
 To verify that Java is installed, open a terminal and run:
 
-bash
+```bash
 Copy code
 java -version
+```
 You should see information about the installed Java version.
 
 Step 2: Install a Custom Certificate to Java cacerts
@@ -40,13 +42,15 @@ Download the custom certificate (e.g., custom_certificate.crt) that you want to 
 Locate the Java cacerts File
 The cacerts file is typically located in the lib/security directory of your Java installation. For example, if you installed OpenJDK 11 using Homebrew, the path might be:
 
-bash
+```bash
 Copy code
 /usr/local/opt/openjdk@11/libexec/openjdk.jdk/Contents/Home/lib/security/cacerts
+```
 Add the Custom Certificate
 Use the keytool command to import the custom certificate into the cacerts file. Run the following command in the terminal, replacing custom_certificate.crt with the actual filename:
 
-bash
+```bash
 Copy code
 sudo keytool -import -trustcacerts -keystore /path/to/cacerts -storepass changeit -alias custom_certificate_alias -file /path/to/custom_certificate.crt
+```
 You will be prompted for your system password since this operation requires administrative privileges.
