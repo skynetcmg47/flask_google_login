@@ -1,3 +1,20 @@
+Certainly! Here is the Markdown code for the tutorial:
+
+markdown
+Copy code
+# Installing Homebrew on macOS for Non-Root Users
+
+If you don't have administrative privileges on your macOS machine but still want to use Homebrew, you can install it for a non-root user. This guide will walk you through the process.
+
+## Step 1: Check for Existing Homebrew Installation
+
+Before you start, it's a good idea to check whether Homebrew is already installed on your machine. Open a terminal and run:
+
+```bash
+brew --version
+```
+If Homebrew is not installed, you'll see a message indicating that the command is not found.
+
 Step 2: Install Homebrew for a Non-Root User
 Follow these steps to install Homebrew for a non-root user:
 
@@ -53,4 +70,3 @@ You've successfully installed Homebrew for a non-root user on your macOS machine
 
 Happy brewing!
 
-sql
